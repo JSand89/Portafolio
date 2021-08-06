@@ -1,0 +1,123 @@
+.wrapperInicio{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.pictureHV{
+    background-image: url("https://i.ibb.co/W63RqrZ/FotoHV.png");
+    grid-column: 6;
+    grid-row: 2;
+    height: 512px;
+    width: 384px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#name{
+    /* padding-top: 20%; */
+    color: #ACB1FA;
+    grid-column: 6/11;
+    grid-row: 1;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+#name h2{
+    font-size: 45px;
+}
+#Fullstack{
+    grid-row: 3;
+    grid-column: 2/7;
+    font-size: large;
+    color: #ACB1FA;
+}
+#Productos{
+    grid-row: 3;
+    grid-column: 7/12;
+    font-size: large;
+    color: #ACB1FA;
+}
+.BackgroundTextInicio{
+    font-size: x-large;
+    grid-column: 2/12;
+    grid-row: 4;
+    background-color: #14233E;
+    color: #ACB1FA;
+}
+
+@media screen and  (max-width:920px) and (min-width:600px){
+    
+    #Fullstack h2{
+        font-size: 20px;
+    }
+    #Productos{
+        display: none;
+    }
+    #Productos h2{
+        font-size: 20px;
+        margin-right: 5px;
+    }
+    #name h2{
+        font-size: 30px; 
+    } 
+    /* .pictureHV, #name{
+        display: none;
+    } */
+    .BackgroundTextInicio{  
+        grid-column: 1/13;
+        font-size: medium;
+}
+.subTitules{
+    background-image: url("https://i.ibb.co/W63RqrZ/FotoHV.png");
+    grid-column:1/13;
+    grid-row: 1;
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+}
+@media screen and (max-width:600px){
+    .wrapperInicio{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #Productos{
+        display: none;
+    }
+    .subTitules{
+        background-image: url("https://i.ibb.co/W63RqrZ/FotoHV.png");
+        grid-column:1/13;
+        grid-row: 1;
+        height: 200px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .BackgroundTextInicio{
+        width: 300px;
+    }
+    .BackgroundTextInicio p{
+        font-size: 14px;
+    }
+    #name{
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    #name h2{
+        font-size: 30px; 
+    } 
+    #Fullstack h2{
+        font-size: 20px;
+    }
+    .pictureHV{
+        height: 300px;
+        width: 300px;
+    }
+    #linkedinButton{
+        display:initial;
+    }
+}

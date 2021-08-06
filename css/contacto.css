@@ -1,0 +1,74 @@
+.wrapperContacto{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0px;
+    grid-auto-rows: minmax(50px, auto);
+    margin-top: 30px;
+    background-color:#ACB1FA;
+    color: #14233E;
+    margin-left: 200px;
+    padding-bottom: 40px;
+}
+.wrapperContacto ul{
+    grid-column: 2/12;
+    list-style: none;
+    display: flex;
+    padding:5px;
+    margin: 5px;
+    float: right;
+    background-color:#ACB1FA;
+    color: #14233E;
+}
+.wrapperContacto li{
+    grid-column: 2/12;
+    width: 100px;
+    display: inline-block;
+    background-color: #ACB1FA;
+    color: #14233E;
+  }
+#email{
+    grid-column: 4/auto;
+    grid-row: 2;
+}
+#tel{
+    grid-column: 7/auto;
+    grid-row: 2;
+}
+#contactTitule{
+    grid-column: 2/auto;
+    grid-row: 1;
+}
+@media screen and (min-width:600px) and (max-width:920px){
+    .wrapperContacto{
+        margin-left:100px;
+    }
+    #email{
+        grid-column: 2/auto;
+        grid-row: 3;
+    }
+    #tel{
+        grid-column: 2/auto;
+        grid-row: 2;
+    }
+    #contactTitule{
+        grid-column: 2/auto;
+        grid-row: 1;
+    }   
+}
+@media screen and (max-width:600px) {
+    .wrapperContacto{
+        margin-left:0px;
+    }
+    #email{
+        grid-column: 2/auto;
+        grid-row: 3;
+    }
+    #tel{
+        grid-column: 2/auto;
+        grid-row: 2;
+    }
+    #contactTitule{
+        grid-column: 2/auto;
+        grid-row: 1;
+    }  
+}
