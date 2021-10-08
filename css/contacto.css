@@ -57,7 +57,7 @@
 }
 @media screen and (max-width:600px) {
     .wrapperContacto{
-        margin-left:0px;
+        margin: left 10px;
     }
     #email{
         grid-column: 2/auto;

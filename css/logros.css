@@ -6,17 +6,24 @@
     margin-top: 50px;
     margin-left: 200px;
 }
+.experencia{
+    margin: 5px;
+    grid-column: 2/11;
+    grid-row: 1;
+    background-color: #ACB1FA;
+    color: #14233E;
+}
 .BackgroundTextEWC{
     font-size: x-large;
     grid-column: 7/12;
-    grid-row: 1/3;
+    grid-row: 2;
     background-color: #14233E;
     color: #ACB1FA;
 }
 .BackgroundTextGIET{
     margin: 5px;
     grid-column: 2/6;
-    grid-row: 1;
+    grid-row: 3;
     background-color: #ACB1FA;
     color: #14233E;
     /* background-image: url("https://i.ibb.co/nm6Jc7k/GIET.png");
@@ -40,7 +47,7 @@
     margin-top: 3px;
     font-size: x-large;
     grid-column: 2/12;
-    grid-row: 3;
+    grid-row: 4;
     background-color: #14233E;
     color: #ACB1FA;
 }
